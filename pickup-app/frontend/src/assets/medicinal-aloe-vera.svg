@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aloe vera plant">
+  <defs>
+    <linearGradient id="pot" x1="148" y1="300" x2="364" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#A7F3D0" stop-opacity="0.58"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="220" y1="120" x2="310" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#16A34A" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="mud" x1="150" y1="420" x2="360" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#92400E" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A16207" stop-opacity="0.65"/>
+    </linearGradient>
+    <filter id="shadow" x="-40" y="-40" width="592" height="592" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="28" y="28" width="456" height="456" rx="48" fill="#ECFDF5" />
+
+  <!-- mud -->
+  <path d="M118 418 C150 390, 196 372, 252 372 C322 372, 370 400, 402 442 C356 470, 306 484, 252 484 C196 484, 146 462, 118 418Z"
+        fill="url(#mud)" opacity="0.82"/>
+
+  <!-- pot -->
+  <g filter="url(#shadow)">
+    <path d="M256 432 C198 432, 158 394, 158 346 L158 320 H354 L354 346 C354 394, 314 432, 256 432Z" fill="url(#pot)"/>
+    <path d="M158 320 C158 296, 178 276, 202 276 H310 C334 276, 354 296, 354 320 Z" fill="#0B1220" opacity="0.10"/>
+  </g>
+
+  <!-- aloe blades -->
+  <g fill="url(#blade)" opacity="0.95">
+    <path d="M256 308 C240 248, 246 184, 272 128 C296 184, 298 250, 268 308 Z" />
+    <path d="M232 320 C204 270, 178 214, 182 156 C226 200, 246 258, 244 320 Z" opacity="0.9"/>
+    <path d="M282 320 C304 272, 334 220, 334 162 C298 200, 272 256, 270 320 Z" opacity="0.9"/>
+    <path d="M214 332 C180 304, 150 268, 146 220 C190 244, 226 276, 236 332 Z" opacity="0.85"/>
+    <path d="M300 332 C330 304, 362 268, 368 220 C324 244, 288 276, 278 332 Z" opacity="0.85"/>
+  </g>
+</svg>
+

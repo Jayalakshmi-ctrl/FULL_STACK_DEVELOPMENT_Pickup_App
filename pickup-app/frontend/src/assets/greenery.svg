@@ -1,0 +1,70 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Greenery illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="900" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="0.6" stop-color="#ECFDF5"/>
+      <stop offset="1" stop-color="#F0FDF4"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22C55E" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="leaf2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#16A34A" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#86EFAC" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#60A5FA" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#A7F3D0" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="shadow" x="-30" y="-30" width="960" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.16"/>
+    </filter>
+    <filter id="blur" x="-30" y="-30" width="960" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="600" rx="36" fill="url(#sky)"/>
+
+  <!-- Soft bokeh -->
+  <g opacity="0.45" filter="url(#blur)">
+    <circle cx="180" cy="150" r="78" fill="#93C5FD"/>
+    <circle cx="730" cy="150" r="70" fill="#A7F3D0"/>
+    <circle cx="520" cy="520" r="90" fill="#86EFAC"/>
+  </g>
+
+  <!-- Plant pot -->
+  <g filter="url(#shadow)" transform="translate(290 140)">
+    <path d="M170 360 C110 360, 70 320, 70 270 L70 230 H270 L270 270 C270 320, 230 360, 170 360Z" fill="url(#pot)"/>
+    <path d="M70 230 C70 210, 86 194, 106 194 H234 C254 194, 270 210, 270 230 Z" fill="#0B1220" opacity="0.10"/>
+    <path d="M120 214 H220" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Stems -->
+    <path d="M170 200 C170 165, 168 130, 160 95" stroke="#166534" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round"/>
+    <path d="M170 200 C170 160, 184 120, 210 88" stroke="#166534" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round"/>
+    <path d="M170 200 C168 158, 138 125, 110 98" stroke="#166534" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Leaves -->
+    <path d="M170 140 C140 120, 114 124, 98 154 C120 176, 150 178, 170 160 Z" fill="url(#leaf)"/>
+    <path d="M195 122 C212 90, 238 80, 268 96 C256 130, 228 144, 202 138 Z" fill="url(#leaf2)"/>
+    <path d="M150 110 C132 82, 106 74, 78 92 C92 124, 122 138, 146 132 Z" fill="url(#leaf2)"/>
+
+    <path d="M162 86 C142 62, 146 40, 174 30 C196 50, 196 74, 176 92 Z" fill="url(#leaf)"/>
+    <path d="M214 74 C224 42, 250 30, 280 44 C276 78, 252 94, 226 92 Z" fill="url(#leaf)"/>
+    <path d="M116 74 C102 44, 78 34, 50 48 C58 82, 84 96, 110 92 Z" fill="url(#leaf)"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0 520 C180 470, 360 560, 520 520 C690 475, 780 470, 900 500 V600 H0 Z" fill="#22C55E" opacity="0.12"/>
+  <path d="M0 540 C190 500, 380 590, 540 545 C710 500, 790 496, 900 520 V600 H0 Z" fill="#0EA5E9" opacity="0.10"/>
+
+  <!-- Caption -->
+  <g opacity="0.9">
+    <rect x="36" y="510" width="520" height="62" rx="18" fill="#FFFFFF" fill-opacity="0.65" stroke="#FFFFFF" stroke-opacity="0.6"/>
+    <text x="60" y="550" font-family="ui-sans-serif, system-ui, Segoe UI, Arial" font-size="22" font-weight="800" fill="#0B1220">
+      Greenery & community cleanups
+    </text>
+  </g>
+</svg>
+

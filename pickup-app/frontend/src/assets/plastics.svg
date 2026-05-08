@@ -1,0 +1,112 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Plastics illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93C5FD" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#A7F3D0" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#C7D2FE" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="plastic" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="plastic2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#60A5FA" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0.40"/>
+    </linearGradient>
+    <filter id="shadow" x="-30" y="-30" width="960" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30" y="-30" width="960" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+    <linearGradient id="saplingLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#16A34A" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="saplingPot" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#60A5FA" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#A7F3D0" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="mud" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#92400E" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#A16207" stop-opacity="0.62"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="600" rx="36" fill="url(#bg)"/>
+
+  <!-- Soft bokeh -->
+  <g opacity="0.55" filter="url(#soft)">
+    <circle cx="160" cy="120" r="62" fill="#67E8F9"/>
+    <circle cx="780" cy="150" r="74" fill="#A78BFA"/>
+    <circle cx="520" cy="520" r="88" fill="#93C5FD"/>
+  </g>
+
+  <!-- Plastics (slightly bigger) -->
+  <g transform="translate(-35 -22) scale(1.08)">
+    <!-- Plastic bottle -->
+    <g filter="url(#shadow)" transform="translate(125 110) rotate(-10 240 250)">
+      <rect x="170" y="60" width="160" height="380" rx="78" fill="url(#plastic2)" opacity="0.9"/>
+      <rect x="184" y="78" width="132" height="346" rx="66" fill="url(#plastic)"/>
+      <rect x="202" y="38" width="96" height="52" rx="22" fill="#0F172A" opacity="0.12"/>
+      <rect x="214" y="22" width="72" height="30" rx="12" fill="#0F172A" opacity="0.18"/>
+      <path d="M205 185 C245 150, 300 165, 312 210 C322 250, 280 278, 238 270 C210 265, 188 230, 205 185Z" fill="#FFFFFF" opacity="0.45"/>
+    </g>
+
+    <!-- Plastic bag -->
+    <g filter="url(#shadow)" transform="translate(420 140) rotate(10 170 210)">
+      <path d="M90 150 C90 95, 128 62, 170 62 C212 62, 250 95, 250 150 L250 360 C250 405, 216 440, 170 440 C124 440, 90 405, 90 360 Z"
+            fill="url(#plastic2)" opacity="0.85"/>
+      <path d="M108 156 C108 110, 140 84, 170 84 C200 84, 232 110, 232 156 L232 350 C232 388, 202 418, 170 418 C138 418, 108 388, 108 350 Z"
+            fill="url(#plastic)" />
+      <path d="M120 95 C120 58, 142 38, 170 38 C198 38, 220 58, 220 95" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="18" stroke-linecap="round"/>
+      <path d="M130 235 C165 210, 220 224, 220 265 C220 305, 176 326, 142 310 C116 297, 107 257, 130 235Z" fill="#FFFFFF" opacity="0.42"/>
+    </g>
+
+    <!-- Plastic cup -->
+    <g filter="url(#shadow)" transform="translate(600 235) rotate(-7 120 160)">
+      <path d="M60 70 H180 L160 340 C158 362, 140 380, 118 380 H122 C100 380, 82 362, 80 340 Z"
+            fill="url(#plastic2)" opacity="0.85"/>
+      <path d="M78 92 H162 L145 330 C143 345, 131 358, 116 358 H124 C109 358, 97 345, 95 330 Z"
+            fill="url(#plastic)" />
+      <path d="M78 140 H162" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="12" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Cross-mark (no plastics) -->
+  <g opacity="0.92">
+    <circle cx="455" cy="300" r="185" fill="#FFFFFF" fill-opacity="0.10"/>
+    <circle cx="455" cy="300" r="185" stroke="#EF4444" stroke-opacity="0.86" stroke-width="18"/>
+    <path d="M332 178 L578 422" stroke="#EF4444" stroke-opacity="0.90" stroke-width="22" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sapling (much bigger) + mud -->
+  <g transform="translate(420 140) scale(2.35)">
+    <!-- mud mound (behind pot) -->
+    <path d="M42 214 C70 192, 102 182, 132 184 C168 186, 196 204, 216 230 C190 248, 154 258, 120 256 C84 254, 60 242, 42 214Z"
+          fill="url(#mud)" opacity="0.72"/>
+    <path d="M60 224 C84 206, 110 200, 138 202 C162 204, 184 214, 204 232"
+          stroke="#78350F" stroke-opacity="0.35" stroke-width="10" stroke-linecap="round"/>
+
+    <g filter="url(#shadow)">
+      <!-- pot -->
+      <path d="M120 200 C85 200, 60 176, 60 146 L60 122 H180 L180 146 C180 176, 155 200, 120 200Z" fill="url(#saplingPot)"/>
+      <path d="M60 122 C60 110, 70 100, 82 100 H158 C170 100, 180 110, 180 122 Z" fill="#0B1220" opacity="0.10"/>
+      <!-- stem -->
+      <path d="M120 118 C120 92, 120 70, 112 50" stroke="#166534" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round"/>
+      <!-- leaves -->
+      <path d="M118 76 C96 62, 78 66, 66 88 C84 104, 108 104, 122 92 Z" fill="url(#saplingLeaf)"/>
+      <path d="M132 70 C146 44, 168 38, 192 50 C184 78, 164 90, 142 86 Z" fill="url(#saplingLeaf)"/>
+      <path d="M112 54 C98 36, 102 20, 122 14 C140 28, 140 46, 126 58 Z" fill="url(#saplingLeaf)"/>
+    </g>
+  </g>
+
+  <!-- Caption -->
+  <g opacity="0.9">
+    <rect x="36" y="510" width="780" height="62" rx="18" fill="#FFFFFF" fill-opacity="0.65" stroke="#FFFFFF" stroke-opacity="0.6"/>
+    <text x="60" y="550" font-family="ui-sans-serif, system-ui, Segoe UI, Arial" font-size="20" font-weight="900" fill="#0B1220">
+      Plan for Green Earth , recycle Plastics
+    </text>
+  </g>
+</svg>
+

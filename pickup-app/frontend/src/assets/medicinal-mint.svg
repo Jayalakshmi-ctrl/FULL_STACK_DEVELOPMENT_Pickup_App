@@ -1,0 +1,45 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mint plant">
+  <defs>
+    <linearGradient id="pot" x1="148" y1="300" x2="364" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#A7F3D0" stop-opacity="0.58"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="160" y1="130" x2="360" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="mud" x1="150" y1="420" x2="360" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#92400E" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A16207" stop-opacity="0.65"/>
+    </linearGradient>
+    <filter id="shadow" x="-40" y="-40" width="592" height="592" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="28" y="28" width="456" height="456" rx="48" fill="#ECFDF5" />
+
+  <!-- mud -->
+  <path d="M120 418 C150 388, 196 372, 250 372 C318 372, 368 398, 398 438 C356 468, 308 482, 250 482 C196 482, 150 462, 120 418Z"
+        fill="url(#mud)" opacity="0.82"/>
+
+  <!-- pot -->
+  <g filter="url(#shadow)">
+    <path d="M256 430 C196 430, 156 392, 156 344 L156 318 H356 L356 344 C356 392, 316 430, 256 430Z" fill="url(#pot)"/>
+    <path d="M156 318 C156 294, 176 274, 200 274 H312 C336 274, 356 294, 356 318 Z" fill="#0B1220" opacity="0.10"/>
+  </g>
+
+  <!-- stems -->
+  <path d="M256 312 C246 264, 242 220, 228 182" stroke="#166534" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+  <path d="M256 312 C268 262, 286 220, 304 190" stroke="#166534" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- mint leaves -->
+  <g fill="url(#leaf)" opacity="0.95">
+    <path d="M230 236 C200 224, 172 232, 156 256 C182 282, 214 286, 236 270 Z"/>
+    <path d="M280 230 C304 202, 340 198, 380 214 C364 246, 332 262, 298 258 Z"/>
+    <path d="M220 198 C196 176, 166 176, 140 192 C162 226, 192 238, 218 232 Z" opacity="0.9"/>
+    <path d="M294 196 C316 168, 348 162, 382 176 C370 212, 340 232, 312 230 Z" opacity="0.9"/>
+    <path d="M248 176 C232 150, 212 140, 188 144 C196 178, 220 196, 244 196 Z" opacity="0.88"/>
+  </g>
+</svg>
+

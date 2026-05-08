@@ -1,0 +1,51 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ashwagandha sapling">
+  <defs>
+    <linearGradient id="pot" x1="148" y1="300" x2="364" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#A7F3D0" stop-opacity="0.58"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="170" y1="130" x2="360" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16A34A" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#34D399" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="mud" x1="150" y1="420" x2="360" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#92400E" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A16207" stop-opacity="0.65"/>
+    </linearGradient>
+    <filter id="shadow" x="-40" y="-40" width="592" height="592" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="28" y="28" width="456" height="456" rx="48" fill="#ECFDF5" />
+
+  <!-- mud -->
+  <path d="M120 418 C150 388, 196 372, 250 372 C318 372, 368 398, 398 438 C356 468, 308 482, 250 482 C196 482, 150 462, 120 418Z"
+        fill="url(#mud)" opacity="0.82"/>
+
+  <!-- pot -->
+  <g filter="url(#shadow)">
+    <path d="M256 430 C196 430, 156 392, 156 344 L156 318 H356 L356 344 C356 392, 316 430, 256 430Z" fill="url(#pot)"/>
+    <path d="M156 318 C156 294, 176 274, 200 274 H312 C336 274, 356 294, 356 318 Z" fill="#0B1220" opacity="0.10"/>
+  </g>
+
+  <!-- stems -->
+  <path d="M256 314 C250 262, 244 218, 226 178" stroke="#166534" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+  <path d="M256 314 C268 260, 284 220, 306 184" stroke="#166534" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- leaves -->
+  <g fill="url(#leaf)" opacity="0.95">
+    <path d="M240 236 C208 222, 176 230, 158 258 C184 284, 222 290, 246 270 Z"/>
+    <path d="M286 232 C312 204, 348 198, 388 214 C372 246, 340 262, 304 258 Z"/>
+    <path d="M232 198 C214 168, 182 164, 150 176 C170 212, 202 232, 230 230 Z" opacity="0.9"/>
+    <path d="M294 196 C312 164, 346 156, 380 168 C370 206, 340 228, 312 230 Z" opacity="0.9"/>
+  </g>
+
+  <!-- berries (stylized) -->
+  <g opacity="0.85">
+    <circle cx="244" cy="250" r="10" fill="#F97316"/>
+    <circle cx="270" cy="258" r="10" fill="#FB7185"/>
+    <circle cx="298" cy="250" r="10" fill="#F97316"/>
+  </g>
+</svg>
+
